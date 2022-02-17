@@ -11,58 +11,138 @@
     <title>Kei Sugiyama's Github Page</title>
   </head>
   <body>
-    <div class="container-fluid outer">
-      <!-- Welcome message  -->
-      <div class="row justify-content-center title-top">
-        <div class="col-8">
-          <h1>Welcome to Kei Sugiyama's Github Page</h1>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-base">
+      <a class="navbar-brand" id="logo">Kei Sugiyama</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#intro">About me</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
+          <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+
         </div>
       </div>
+    </nav>
+    <!-- introduction-->
+    <section class="container" id="intro">
+      <dev class="row justify-content-center">
+        <dev class="col-5 mt-5">
+          <picture>
+            <img class="rounded-circle border border-light mx-auto d-block mb-5" src="portfolio.png">
+          </picture>
+          <h1>Hello, I am Kei Sugiyama.</h1>
+          <p>I am learning web development at Full-stack Web Development course at MIT. Currently I am working as a translator/marketing reseacher but I am exited to start my career as a web developer.
+          </p>
+          <p>
+            I live in Seattle area now but I am originally from Osaka, Japan.
+            I love fishing and cooking.
+            I am a father of my darest daughter who is turning 2 years old soon.
+          </p>
+        </dev>
+      </dev>
+      
+    </section>
+    <!-- detailed profile  -->
+    <section class="container" id="contact">
+      <dev class="row">
+        <dev class="col-6 mt-5">
+          <h1>Video Introduction</h1>
+          <iframe width="420" height="315"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
+          <h1 class="mt-4">What have I learned so far?</h1>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Node.js (coming soon)</li>
+            <li>Mongo DB (coming soon)</li>
+          </ul>
+        </dev>
+        <dev class="col-6 mt-5">
+          <h1>Contact me</h1>
+          <div class="row mt-5">
+            <div class="col"><a href="https://www.linkedin.com/in/kei-sugiyak" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Linkedin</a>
+            <a href="https://github.com/sugiyak" class="btn btn-light btn-lg active" role="button" aria-pressed="true">Github</a></div>
+          </div>
+          <div class="row mt-5">
+            <h2>Or...</h2>
+            <h3>Email: sugiyak@outlook.com</h3>
+          </div>
 
+        </dev>
+
+        
+      </dev>
+    </section>
+    <!-- portofolio  -->
+    <section class="container" id="portfolio">
+      <div class="row justify-content-center mb-5">
+        <div class="col-5">
+          <h1>My Portfolio</h1>
+        </div>
+      </div>
       <!-- portfolio cards row-->
-      <div class="row mt-4">
-        <!-- portfolio cards-->
-        <div class="col" >
+      <div class="row justify-content-center">
+        
+        <!-- Balls
+        <div class="col">
           <div class="card box-shadow portfolio-card">
             <div class="preview" id="walk"></div>
             <div class="card-body">
               <h5 class="card-title">Balls</h5>
               <p class="card-text">These ball detect the edge of the box and change directions when they hit it.</p>
-              <a href="#" class="btn btn-primary">View</a>
+              <a href="balls_horizontal/balls_horizontal.html" class="btn btn-dark">View</a>
             </div>
           </div>
         </div>
+        -->
 
 
-      <!-- portfolio cards -->
+      <!-- Pac-man -->
         <div class="col" >
           <div class="card box-shadow portfolio-card">
-            <div class="preview"></div>
+            <div class="preview"><img class="mx-auto d-block mt-5" src="PacMan1.png"></div>
             <div class="card-body">
-              <h5 class="card-title">Random Walk</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">View</a>
+              <h5 class="card-title">Pacman</h5>
+              <p class="card-text">Pacman moves within the window and change its direction as it hit the borders.</p>
+              <a href="https://github.com/sugiyak/pac-man" class="btn btn-dark">View</a>
             </div>
           </div>
         </div>
+        
+      <!-- Eyes -->
+      <div class="col" >
+        <div class="card box-shadow portfolio-card">
+          <div class="preview"><img class="mx-auto d-block mt-5" src="eyes.png"></div>
+          <div class="card-body">
+            <h5 class="card-title">Eyes</h5>
+            <p class="card-text">These eyes(HTML element) follows you as you move your mouse(browser event).</p>
+            <a href="https://github.com/sugiyak/pac-man" class="btn btn-dark">View</a>
+          </div>
+        </div>
+      </div>
 
-      <!-- portfolio cards -->
+      <!-- Bus tracker -->
       <div class="col" >
         <div class="card box-shadow portfolio-card">
           <div class="preview"></div>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">View</a>
+            <h5 class="card-title">Real Time Bus Tracker</h5>
+            <p class="card-text">An app that .</p>
+            <a href="https://github.com/sugiyak/realTimeBusTracking.git" class="btn btn-dark">View</a>
           </div>
         </div>
       </div>
 
       </div>
-    </div>
+    </section>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./balls_preview.js"></script>
+    <script src="./balls_h_preview.js"></script>
   </body>
 </html>

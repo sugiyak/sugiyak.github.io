@@ -1,7 +1,15 @@
-#area {
-  position: relative;
-  background-color: #f0f0f0;
+body {
+  background-color: rgb(31, 31, 36);
+  color: white;
+}
 
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+#logo {
+  margin-left: 20px;
 }
 .ball {
   background-color: black;
@@ -10,20 +18,15 @@
   border-radius: 50%;
 }
 
-.outer {
-  margin: 30px;
-}
-
-.title-top {
-  border-bottom: 15px solid steelblue;
-}
-
 .portfolio-card {
   width: 408px;
+  color: rgb(31, 31, 36);
+  border-radius: 10%;
 }
 
 .preview {
   height: 271px;
   width: 408px;
   background-color: gainsboro;
+  border-radius: 10% 10% 0% 0%;
 }
